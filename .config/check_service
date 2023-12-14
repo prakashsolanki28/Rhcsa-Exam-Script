@@ -1,0 +1,7 @@
+#!/bin/bash
+   
+if systemctl is-active "$1"  > /dev/null; then
+    echo "active"
+else
+    echo "not_active"
+fi

@@ -1,0 +1,73 @@
+#!/bin/bash
+
+# Get a station paper from server
+
+
+if [ -z "$1" ]; then
+  echo -e  "\nError 500"
+  echo -e "Please run file with argument station number"
+  echo -e "Example :\n $0 <argument(station number)>"
+  echo -e "$0 1\n"
+  exit 1
+fi
+
+
+STATION_NO=$1
+SERVER_FILE="$1.sh"
+GET_PAPER_URL="https://prakashsolanki.me/redhat/public/exam_papers/$SERVER_FILE"
+
+#if [ -f ".config/server/$SERVER_FILE" ]; then
+#   echo "Old Data Removed ..."
+#   rm -rf ".config/server/$SERVER_FILE"
+#fi
+
+# Get Paper from server
+#echo "please wait ....."
+#wget "$GET_PAPER_URL" -P .config/server/ 2>/dev/null
+
+# if any error
+#if [ $? -eq 0 ]; then
+#  echo "Connect With Server and Get Paper Station $1 ..."
+#else
+#  echo -e "Failed to find paper from server.\n server Error : 404 $SERVER_FILE not found."
+#fi
+
+source ".config/server/$SERVER_FILE"
+
+
+
+######################## Server Configration Complete ###########################################
+
+paper_marks=()
+
+
+#/////////////////////////// Q.1 ////////////////////////////////////
+current_hostname=$(hostname)
+if [ $(./.config/check_service httpd) == "active" ]; then 
+  if curl -IsS http://localhost:82 &>/dev/null; then
+     if [ "$current_hostname" = "$HOSTNAME" ]; then
+     	paper_marks+=(1)
+     else
+	paper_marks+=(0)
+     fi
+  else
+     paper_marks+=(0)
+  fi
+else
+  if netstat -tuln | grep -q ":82\b"; then
+     paper_marks+=(1)
+  else
+     paper_marks+=(0)
+  fi
+fi
+
+echo "${paper_marks[0]}"
+
+#///////////////////////////// Q.2 ///////////////////////////////////
+source .config/repo_check.sh
+if check_yum; then
+    echo "yum is available."
+else
+    echo "yum is not available."
+fi
+

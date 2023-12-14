@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+PROMPT_COMMAND='history -a'
+history_directory="/rhcsa200/exam_data"
+history_file="$history_directory/history.txt"
+
+if [ ! -d "$history_directory" ]; then
+    mkdir -p "$history_directory"
+fi
+
+cp ~/.bash_history "$history_file"
+
+history >> "$history_file"
+

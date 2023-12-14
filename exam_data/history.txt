@@ -1,0 +1,375 @@
+ip a
+lsblk
+vim /etc/fstab
+mkdir /dvd
+mount -a
+cd /dvd
+;s
+ls
+cd
+vim /etc/yum.repos.d/aa.repo
+yum repolist all
+lsblk
+yum install httpd
+vim /etc/httpd/conf/httpd.conf 
+touch file1
+ls
+cp file1 /var/www/html/
+cd /var/www/html/
+cd
+cd /var/www/html/
+ls
+ls -lZ
+rm -rf *
+cd
+mv file1 /var/www/html/
+cd /var/www/html/
+ls
+ls -lZ
+touch file2 file3
+ls -lZ
+cd
+useradd simone
+passwd simone
+su -simone
+su - simone
+useradd -d /ourhome/remoteuserx remoteuserx
+groupadd elite
+useradd elite
+useradd alex
+passwd alex
+useradd andrew
+passwd andrew 
+yum install tuned
+tuned-adm active
+systemctl restart tuned
+tuned-adm active
+tuned-adm profile balanced 
+tuned-adm active
+lsblk
+fdisk /dev/sdb
+pvcreate /dev/sdb1
+vgcreate myvg /dev/sdb1
+lvcreate -L +100M -n home myvg
+mkfs.xfs /dev/sdb1
+mkfs.xfs /dev/myvg/home
+blkid
+vim /etc/fstab
+mkdir /lvm1
+mount -a
+lsblk
+rm -rf /etc/yum.repos.d/aa.repo 
+echo $PATH
+vi .bashrc
+source .bashrc 
+echo $NAME
+[200~currentHash~
+currentHash
+hash('password')
+echo hash('password')
+man passwd
+passwd -S root
+cat /etc/shadow
+history
+vi /usr/local/bin/getresult
+chmod a+x /usr/local/bin/getresult
+getresult
+vi /usr/local/bin/getresult
+getresult
+ls
+cd /
+ls
+cd exam/
+ls
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult
+vi history.txt 
+ls
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+ls
+ll
+vi history.txt 
+vi /usr/local/bin/getresult
+history
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+ls
+getresult 
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+vi /usr/local/bin/gettemp
+chmod a+x /usr/local/bin/gettemp
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+cat /my.txt 
+history 
+history
+history | grep "ls"
+vi /usr/local/bin/gettemp
+gettemp
+ls
+cat history_result.txt 
+vi /usr/local/bin/gettemp
+gettemp
+cat history_result.txt 
+cat history.txt 
+vi /usr/local/bin/gettemp
+gettemp
+cat history
+cat history.txt 
+cat history_result.txt 
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+vi history_result.txt 
+cat history.txt 
+history > history_for_print.txt
+ls
+cat history_for_print.txt
+vi /usr/local/bin/gettemp
+gettemp
+cat history.txt 
+cat history_result.txt 
+cd
+vi .bash_history 
+history
+vi /usr/local/bin/gettemp
+gettemp
+cd /exam/
+ll
+gettemp
+ls
+ll
+cat history.txt 
+cat history_result.txt 
+q!
+history -w
+history 
+history -w
+[200~currentHash~
+currentHash
+hash('password')
+echo hash('password')
+man passwd
+passwd -S root
+cat /etc/shadow
+history
+vi /usr/local/bin/getresult
+chmod a+x /usr/local/bin/getresult
+getresult
+vi /usr/local/bin/getresult
+getresult
+ls
+cd /
+ls
+cd exam/
+ls
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult
+vi history.txt 
+ls
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+ls
+ll
+vi history.txt 
+vi /usr/local/bin/getresult
+history
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+ls
+getresult 
+vi history.txt 
+vi /usr/local/bin/getresult
+getresult 
+vi /usr/local/bin/getresult
+getresult 
+vi history.txt 
+vi /usr/local/bin/gettemp
+chmod a+x /usr/local/bin/gettemp
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+cat /my.txt 
+history 
+history
+history | grep "ls"
+vi /usr/local/bin/gettemp
+gettemp
+ls
+cat history_result.txt 
+vi /usr/local/bin/gettemp
+gettemp
+cat history_result.txt 
+cat history.txt 
+vi /usr/local/bin/gettemp
+gettemp
+cat history
+cat history.txt 
+cat history_result.txt 
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+vi history_result.txt 
+cat history.txt 
+history > history_for_print.txt
+ls
+cat history_for_print.txt
+vi /usr/local/bin/gettemp
+gettemp
+cat history.txt 
+cat history_result.txt 
+cd
+vi .bash_history 
+history
+vi /usr/local/bin/gettemp
+gettemp
+cd /exam/
+ll
+gettemp
+ls
+ll
+cat history.txt 
+cat history_result.txt 
+q!
+history -w
+history 
+history -w
+ls
+history
+vi /usr/local/bin/gettemp
+gettemp
+ls
+vi history.txt 
+cat history_result.txt 
+rm -rf *
+gettemp
+cat history_result.txt 
+vi /usr/local/bin/gettemp
+gettemp
+rm -rf *
+gettemp
+cat history_result.txt 
+PROMPT_COMMAND='history -a'
+gettemp
+cat history_result.txt 
+PROMPT_COMMAND='history -a'
+cat history_result.txt 
+gettemp
+cat history_result.txt 
+vi /usr/local/bin/gettemp
+gettemp
+ls
+ls -lZ
+gettemp
+vi /usr/local/bin/gettemp
+gettemp
+cat history_result.txt 
+gettemp
+cat history_result.txt 
+time
+date
+gettemp
+cat history_result.txt 
+mv /usr/local/bin/getresult /rhcsa200
+ls
+cd
+ls
+cd /
+ls
+ll
+ls
+cat rhcsa200 
+rm rhcsa200 
+ls
+mkdir /rhcsa200
+ls
+mv /usr/local/bin/gettemp /rhcsa200/
+ls
+cd rhcsa200/
+ls
+./gettemp
+cd /exam/
+ls
+cat history_result.txt 
+cd /
+cd rhcsa200/
+ls
+mv gettemp get_history
+ls
+mkdir /rhcsa200/exam_data
+ls
+mkdir .config
+ls
+ll
+ls -a
+mv get_history .config/
+ls
+cd .config/
+ls
+cd
+cd /rhcsa200/
+cd .config/
+ls
+vi get_history 
+cd ..
+ls
+cd exam_data/
+ls
+cd ..
+cd .config/
+ls
+vi get_history 
+ls
+./get_history
+cd ..
+cd exam_data/
+ls
+cd ..
+cd .config/
+ls
+rm -rf rhcsa200/
+ls
+vi get_history
+cd..
+ls
+./get_history
+cd ..
+cd exam_data/
+ls
+cat history.txt 
+cd ..
+cd exam_data/
+cd ..
+cd .config/
+ls
+vi get_history
+./get_history
+cat /rhcsa200/exam_data/history.txt 
+./get_history
+lc /rhcsa200/exam_data/history.txt 
+wc -l  /rhcsa200/exam_data/history.txt 
+./get_history
+wc -l  /rhcsa200/exam_data/history.txt 
